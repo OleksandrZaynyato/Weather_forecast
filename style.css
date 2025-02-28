@@ -1,0 +1,240 @@
+.colors{
+    background-color: #1A2902;
+    background-color: #344C11;
+    background-color: #778D45;
+    background-color: #AEC09A;
+    background-color: #AEC670;
+
+    background-color: #212517;
+    background-color: #374709;
+    background-color: #759242;
+    background-color: #DED3A6;
+    background-color: #F2F2EF;
+
+    background-color: #677C77;
+    background-color: #445F3B;
+    background-color: #8EA076;
+    background-color: #E0EFEA;
+    background-color: #564734;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(129, 129, 129); */
+    background-color: #677C77;
+}
+
+.for-flex{
+    width: 650px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: end;
+}
+
+.weather_container {
+    width: 210px;
+    height: 250px;
+    /* background-color: rgb(14, 100, 40); */
+    background-color: #445F3B;
+    padding: 15px 10px;
+    border-radius: 10px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    display: grid;
+    grid-template-areas: "input-city_container hr weather";
+    grid-template-columns: 190px 32px 1fr;
+}
+
+.input-city_container {
+    width: 190px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: input-city_container;
+}
+
+.input-city_container input {
+    width: 100% !important;
+    height: 35px;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: none;
+    /* font-size: 15px; */
+}
+
+#country img {
+    height: 30px;
+}
+
+.input-city_container button {
+    width: 170px;
+    height: 30px;
+    background-color: #fff;
+    color: rgb(14, 100, 40);
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+@keyframes formToWeather {
+    0% {
+        width: 200px;
+        height: 250px;
+    }
+
+    100% {
+        width: 650px;
+        height: 300px;
+        border-top-right-radius: 0px;
+    }
+}
+
+
+.weather_container .hr {
+    height: 90%;
+    width: 30px;
+    border-right: 2px rgb(161, 161, 161) solid;
+    background-color: transparent;
+    /* background-color: rgb(161, 161, 161);
+    margin-left: 30px;
+    border-radius: 500px; */
+
+    grid-area: hr;
+    /* transform: rotate(90deg); */
+    display: none;
+}
+
+#weatherForecast {
+    grid-area: weather;
+    /* display: none;
+    flex-direction: column;
+    justify-content: space-between; */
+    padding: 0 0 0 15px;
+    color: #E0EFEA;
+}
+
+/* #sun img,
+#temp {
+    width: 70px;
+    height: 70px;
+} */
+button.active{
+    color: rgba(var(--bs-primary-rgb) 1) !important;
+}
+#myTab {
+    width: fit-content;
+    /* background-color: rgb(14, 100, 40); */
+    background-color: #445F3B;
+    border-top: 10px;
+}
+.nav-tabs .nav-link{
+    color: #edf8f4 !important;
+    border-top: 10px;
+    border: none;
+    font-weight: 600;
+}
+
+.nav-link.active{
+    background-color: #8EA076 !important;
+}
+.listOfCards {
+    width: 100%;
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 120px;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+
+}
+
+.card__item {
+    width: 100%;
+    /* height: 33.3%; */
+}
+
+.card__item div {
+    width: 100% !important;
+    height: fit-content;
+}
+.card__item div img{
+    width: 100%;
+}
+
+#temp {
+    font-size: 25px;
+}
+
+.tab-pane {
+    height: 100%;
+}
+
+#bodyForCard {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tab-content-else {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.tab-content {
+    height: 100%;
+}
+
+.forFlex {
+    display: flex;
+}
+
+#cloudNow img {
+    height: 60px;
+}
+
+#tempNow {
+    font-size: 27px;
+}
+
+#feelsLike {
+    padding: 0 0 0 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#listOfWeatherNow {
+    padding: 0 0 0 15px;
+    font-size: 13px;
+}
+
+#weather{
+    text-align: end;
+}
+
+p{
+    margin: 0;
+}
